@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9452BF4117877669009D5BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9452BF4017877669009D5BFA /* Foundation.framework */; };
-		9452BF4617877669009D5BFA /* PhotoSelector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9452BF4517877669009D5BFA /* PhotoSelector.h */; };
-		9452BF4817877669009D5BFA /* PhotoSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 9452BF4717877669009D5BFA /* PhotoSelector.m */; };
+		9452BF4F178777DB009D5BFA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9452BF4E178777DB009D5BFA /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +18,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				9452BF4617877669009D5BFA /* PhotoSelector.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +27,7 @@
 		9452BF3D17877669009D5BFA /* libPhotoSelector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPhotoSelector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9452BF4017877669009D5BFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9452BF4417877669009D5BFA /* PhotoSelector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoSelector-Prefix.pch"; sourceTree = "<group>"; };
-		9452BF4517877669009D5BFA /* PhotoSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSelector.h; sourceTree = "<group>"; };
-		9452BF4717877669009D5BFA /* PhotoSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSelector.m; sourceTree = "<group>"; };
+		9452BF4E178777DB009D5BFA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9452BF4F178777DB009D5BFA /* AssetsLibrary.framework in Frameworks */,
 				9452BF4117877669009D5BFA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +63,7 @@
 		9452BF3F17877669009D5BFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9452BF4E178777DB009D5BFA /* AssetsLibrary.framework */,
 				9452BF4017877669009D5BFA /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -73,8 +72,6 @@
 		9452BF4217877669009D5BFA /* PhotoSelector */ = {
 			isa = PBXGroup;
 			children = (
-				9452BF4517877669009D5BFA /* PhotoSelector.h */,
-				9452BF4717877669009D5BFA /* PhotoSelector.m */,
 				9452BF4317877669009D5BFA /* Supporting Files */,
 			);
 			path = PhotoSelector;
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9452BF4817877669009D5BFA /* PhotoSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
