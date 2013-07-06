@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9452BF4117877669009D5BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9452BF4017877669009D5BFA /* Foundation.framework */; };
 		9452BF4F178777DB009D5BFA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9452BF4E178777DB009D5BFA /* AssetsLibrary.framework */; };
+		9452BF5A178778EC009D5BFA /* MDSAssetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9452BF59178778EC009D5BFA /* MDSAssetsController.m */; };
+		9452BF5D1787B0B4009D5BFA /* MDSAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9452BF5C1787B0B4009D5BFA /* MDSAlbumsViewController.m */; };
+		949FB35A1787B90E00AF20C0 /* MDSAlbumsViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9452BF5B1787B0B4009D5BFA /* MDSAlbumsViewController.h */; };
+		949FB35B1787B90E00AF20C0 /* MDSAssetsController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9452BF58178778EC009D5BFA /* MDSAssetsController.h */; };
+		949FB35F1787BDA500AF20C0 /* MDSDefaultAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FB35E1787BDA500AF20C0 /* MDSDefaultAlbumCell.m */; };
+		949FB3601787BE0400AF20C0 /* MDSAlbumCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 949FB35C1787BBC800AF20C0 /* MDSAlbumCell.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +24,9 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				949FB3601787BE0400AF20C0 /* MDSAlbumCell.h in CopyFiles */,
+				949FB35A1787B90E00AF20C0 /* MDSAlbumsViewController.h in CopyFiles */,
+				949FB35B1787B90E00AF20C0 /* MDSAssetsController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,6 +37,13 @@
 		9452BF4017877669009D5BFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9452BF4417877669009D5BFA /* PhotoSelector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoSelector-Prefix.pch"; sourceTree = "<group>"; };
 		9452BF4E178777DB009D5BFA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9452BF58178778EC009D5BFA /* MDSAssetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSAssetsController.h; sourceTree = "<group>"; };
+		9452BF59178778EC009D5BFA /* MDSAssetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSAssetsController.m; sourceTree = "<group>"; };
+		9452BF5B1787B0B4009D5BFA /* MDSAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSAlbumsViewController.h; sourceTree = "<group>"; };
+		9452BF5C1787B0B4009D5BFA /* MDSAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSAlbumsViewController.m; sourceTree = "<group>"; };
+		949FB35C1787BBC800AF20C0 /* MDSAlbumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSAlbumCell.h; sourceTree = "<group>"; };
+		949FB35D1787BDA500AF20C0 /* MDSDefaultAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSDefaultAlbumCell.h; sourceTree = "<group>"; };
+		949FB35E1787BDA500AF20C0 /* MDSDefaultAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSDefaultAlbumCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +88,10 @@
 		9452BF4217877669009D5BFA /* PhotoSelector */ = {
 			isa = PBXGroup;
 			children = (
+				9452BF5E1787B0B9009D5BFA /* Albums Views */,
 				9452BF4317877669009D5BFA /* Supporting Files */,
+				9452BF58178778EC009D5BFA /* MDSAssetsController.h */,
+				9452BF59178778EC009D5BFA /* MDSAssetsController.m */,
 			);
 			path = PhotoSelector;
 			sourceTree = "<group>";
@@ -83,6 +102,18 @@
 				9452BF4417877669009D5BFA /* PhotoSelector-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9452BF5E1787B0B9009D5BFA /* Albums Views */ = {
+			isa = PBXGroup;
+			children = (
+				9452BF5B1787B0B4009D5BFA /* MDSAlbumsViewController.h */,
+				9452BF5C1787B0B4009D5BFA /* MDSAlbumsViewController.m */,
+				949FB35C1787BBC800AF20C0 /* MDSAlbumCell.h */,
+				949FB35D1787BDA500AF20C0 /* MDSDefaultAlbumCell.h */,
+				949FB35E1787BDA500AF20C0 /* MDSDefaultAlbumCell.m */,
+			);
+			name = "Albums Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9452BF5A178778EC009D5BFA /* MDSAssetsController.m in Sources */,
+				9452BF5D1787B0B4009D5BFA /* MDSAlbumsViewController.m in Sources */,
+				949FB35F1787BDA500AF20C0 /* MDSDefaultAlbumCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +272,7 @@
 				9452BF4D17877669009D5BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
