@@ -15,6 +15,10 @@
 		949FB35B1787B90E00AF20C0 /* MDSAssetsController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9452BF58178778EC009D5BFA /* MDSAssetsController.h */; };
 		949FB35F1787BDA500AF20C0 /* MDSDefaultAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FB35E1787BDA500AF20C0 /* MDSDefaultAlbumCell.m */; };
 		949FB3601787BE0400AF20C0 /* MDSAlbumCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 949FB35C1787BBC800AF20C0 /* MDSAlbumCell.h */; };
+		949FB3641787C5BD00AF20C0 /* MDSPhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FB3631787C5BD00AF20C0 /* MDSPhotoSelectViewController.m */; };
+		949FB3651787C5C500AF20C0 /* MDSPhotoSelectViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 949FB3621787C5BD00AF20C0 /* MDSPhotoSelectViewController.h */; };
+		949FB3671788732600AF20C0 /* MDSPhotoCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 949FB3661788722300AF20C0 /* MDSPhotoCell.h */; };
+		949FB36A1788752C00AF20C0 /* MDSDefaultPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FB3691788752C00AF20C0 /* MDSDefaultPhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +28,8 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				949FB3671788732600AF20C0 /* MDSPhotoCell.h in CopyFiles */,
+				949FB3651787C5C500AF20C0 /* MDSPhotoSelectViewController.h in CopyFiles */,
 				949FB3601787BE0400AF20C0 /* MDSAlbumCell.h in CopyFiles */,
 				949FB35A1787B90E00AF20C0 /* MDSAlbumsViewController.h in CopyFiles */,
 				949FB35B1787B90E00AF20C0 /* MDSAssetsController.h in CopyFiles */,
@@ -44,6 +50,11 @@
 		949FB35C1787BBC800AF20C0 /* MDSAlbumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSAlbumCell.h; sourceTree = "<group>"; };
 		949FB35D1787BDA500AF20C0 /* MDSDefaultAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSDefaultAlbumCell.h; sourceTree = "<group>"; };
 		949FB35E1787BDA500AF20C0 /* MDSDefaultAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSDefaultAlbumCell.m; sourceTree = "<group>"; };
+		949FB3621787C5BD00AF20C0 /* MDSPhotoSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSPhotoSelectViewController.h; sourceTree = "<group>"; };
+		949FB3631787C5BD00AF20C0 /* MDSPhotoSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSPhotoSelectViewController.m; sourceTree = "<group>"; };
+		949FB3661788722300AF20C0 /* MDSPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSPhotoCell.h; sourceTree = "<group>"; };
+		949FB3681788752C00AF20C0 /* MDSDefaultPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSDefaultPhotoCell.h; sourceTree = "<group>"; };
+		949FB3691788752C00AF20C0 /* MDSDefaultPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSDefaultPhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +99,7 @@
 		9452BF4217877669009D5BFA /* PhotoSelector */ = {
 			isa = PBXGroup;
 			children = (
+				949FB3611787C4CA00AF20C0 /* Photo Select Views */,
 				9452BF5E1787B0B9009D5BFA /* Albums Views */,
 				9452BF4317877669009D5BFA /* Supporting Files */,
 				9452BF58178778EC009D5BFA /* MDSAssetsController.h */,
@@ -114,6 +126,18 @@
 				949FB35E1787BDA500AF20C0 /* MDSDefaultAlbumCell.m */,
 			);
 			name = "Albums Views";
+			sourceTree = "<group>";
+		};
+		949FB3611787C4CA00AF20C0 /* Photo Select Views */ = {
+			isa = PBXGroup;
+			children = (
+				949FB3621787C5BD00AF20C0 /* MDSPhotoSelectViewController.h */,
+				949FB3631787C5BD00AF20C0 /* MDSPhotoSelectViewController.m */,
+				949FB3661788722300AF20C0 /* MDSPhotoCell.h */,
+				949FB3681788752C00AF20C0 /* MDSDefaultPhotoCell.h */,
+				949FB3691788752C00AF20C0 /* MDSDefaultPhotoCell.m */,
+			);
+			name = "Photo Select Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +194,8 @@
 				9452BF5A178778EC009D5BFA /* MDSAssetsController.m in Sources */,
 				9452BF5D1787B0B4009D5BFA /* MDSAlbumsViewController.m in Sources */,
 				949FB35F1787BDA500AF20C0 /* MDSDefaultAlbumCell.m in Sources */,
+				949FB3641787C5BD00AF20C0 /* MDSPhotoSelectViewController.m in Sources */,
+				949FB36A1788752C00AF20C0 /* MDSDefaultPhotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
