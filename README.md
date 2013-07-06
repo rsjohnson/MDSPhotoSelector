@@ -9,7 +9,7 @@ Integration
 -----------
 First, this requires a deployment target of iOS 6.0 or greater. If your app still targets iOS 5, I'm sorry. You need a better product or project manager. People who still have iOS 5 on their phone don't deserve nice things. 
 
-Apple has far better instructions on integrating a static library [here]
+Apple has far better instructions than I could ever write on how to integrate a static library [here]
 (http://developer.apple.com/library/ios/#technotes/iOSStaticLibraries/Articles/configuration.html#//apple_ref/doc/uid/TP40012554-CH3-SW1).
 
 You will also probably need to link against the AssetsLibrary.framework as well. 
